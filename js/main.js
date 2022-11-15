@@ -1,3 +1,18 @@
+function testAcess(){
+    let senha = document.getElementById("password");
+    let downloads = document.getElementById("downloads");
+    var botoes = document.getElementsByClassName('clickable');
+    if(senha.value == "3412"){
+        senha.style.border = "1px solid green";
+        downloads.style = "-webkit-filter: none";
+        for(let i = 0; i <botoes.length; i++){ 
+            botoes[i].style = "display: inline";
+        }
+    }else{
+        senha.style.border = "1px solid red";
+    }
+}
+
 (function ($) {
     "use strict";
 
